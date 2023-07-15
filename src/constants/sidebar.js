@@ -1,9 +1,16 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHouse } from "@fortawesome/free-solid-svg-icons";
+import {
+    faClockRotateLeft,
+    faPlay,
+    faClock,
+    faThumbsUp,
+    faBookmark,
+} from "@fortawesome/free-solid-svg-icons";
 import "./sidebar.css";
+import SubMenu from "../components/Sidebar/SubMenu";
 const Sidebar = () => {
-    const sidebarMenuItems = [
+    const sidebarFeaturedMenu = [
         {
             icon: faHouse,
             text: "Home",
@@ -17,15 +24,36 @@ const Sidebar = () => {
             text: "Subscriptions",
         },
     ];
+    const sidebarPreferencesMenu = [
+        {
+            icon: faBookmark,
+            text: "Library",
+        },
+        {
+            icon: faClockRotateLeft,
+            text: "History",
+        },
+        {
+            icon: faPlay,
+            text: "Your Videos",
+        },
+        {
+            icon: faClock,
+            text: "Watch later",
+        },
+        {
+            icon: faThumbsUp,
+            text: "Liked Videos",
+        },
+    ];
     return (
-        <ul>
-            {sidebarMenuItems.map((item, index) => (
-                <li key={index}>
-                    <FontAwesomeIcon icon={item.icon} />
-                    <span>{item.text}</span>
-                </li>
-            ))}
-        </ul>
+        <div className="sidebar">
+            <SubMenu menuList={sidebarFeaturedMenu} />
+            <hr />
+            <SubMenu menuList={sidebarPreferencesMenu} />
+            <hr />
+            <SubMenu menuList={sidebarFeaturedMenu} />
+        </div>
     );
 };
 

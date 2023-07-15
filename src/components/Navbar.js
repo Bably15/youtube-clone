@@ -13,7 +13,7 @@ const Navbar = () => {
     return (
         <div className="navbar">
             <div className="navbar--logo">
-                <FontAwesomeIcon icon={faBars} style={{ color: "#ffffff" }} />
+                <FontAwesomeIcon icon="fa-solid faBars" />
                 <a href="#youtubeIcon">
                     {<img className="ytLogo" src={youtubeLogo} alt="" />}
                 </a>
