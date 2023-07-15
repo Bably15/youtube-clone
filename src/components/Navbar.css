@@ -1,0 +1,44 @@
+.navbar {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar--logo {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+.ytLogo {
+    max-height: 50px;
+    margin-left: 10px;
+}
+
+.input-search {
+    background-color: rgb(0, 0, 0);
+    border: 1px solid #292929;
+    border-radius: 40px 0 0 40px;
+    padding: 10px;
+
+    /* margin-top: 5%; */
+}
+.search-button {
+    background-color: #292929;
+    border-style: none;
+    border-radius: 0 40px 40px 0;
+    padding: 10px;
+}
+.microphone {
+    background-color: #292929;
+    border-radius: 50%;
+    border-style: none;
+    padding: 10px;
+    margin-left: 10px;
+}
+/* .action--buttons {
+    
+} */
+.action--buttons a {
+    margin-right: 20px;
+}
