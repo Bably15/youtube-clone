@@ -1,4 +1,3 @@
-import React from "react";
 import { faHouse } from "@fortawesome/free-solid-svg-icons";
 import {
     faClockRotateLeft,
@@ -8,7 +7,8 @@ import {
     faBookmark,
 } from "@fortawesome/free-solid-svg-icons";
 import "./sidebar.css";
-import SubMenu from "../components/Sidebar/SubMenu";
+import SubMenu from "./SubMenu";
+
 const Sidebar = () => {
     const sidebarFeaturedMenu = [
         {

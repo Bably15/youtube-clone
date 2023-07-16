@@ -7,13 +7,13 @@ import { faVideo } from "@fortawesome/free-solid-svg-icons";
 import { faBell } from "@fortawesome/free-solid-svg-icons";
 import { faUser } from "@fortawesome/free-solid-svg-icons";
 
-import youtubeLogo from "../assets/images/youtubeLogo.jpg";
+import youtubeLogo from "../../assets/images/youtubeLogo.jpg";
 import "./Navbar.css";
 const Navbar = () => {
     return (
         <div className="navbar">
             <div className="navbar--logo">
-                <FontAwesomeIcon icon="fa-solid faBars" />
+                <FontAwesomeIcon icon={faBars} style={{ color: "#ffffff" }} />
                 <a href="#youtubeIcon">
                     {<img className="ytLogo" src={youtubeLogo} alt="" />}
                 </a>
