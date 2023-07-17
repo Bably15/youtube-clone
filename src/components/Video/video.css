@@ -3,7 +3,34 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    background-color: black;
+    color: aliceblue;
+    padding: 20px;
+    margin-top: 50px;
 }
 .video__item {
-    width: 33%;
+    width: 30%;
+    margin-top: 20px;
+    text-align: start;
+    padding: 20px;
+}
+.video__item--link {
+    border-radius: 20px;
+    width: 369.478px;
+    height: 200.33px;
+    padding: 10px;
+}
+
+.video__item--link--utilities {
+    display: flex;
+}
+.video__item--image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0 10px 0 10px;
+}
+.video__item--title {
+    margin: 0;
+    font-family: "Roboto", "Arial", sans-serif;
 }

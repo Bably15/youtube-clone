@@ -46,13 +46,35 @@ const Sidebar = () => {
             text: "Liked Videos",
         },
     ];
+    const sidebarSubscriptionsMenu = [
+        {
+            icon: faBookmark,
+            text: "Adulting Diaries",
+        },
+        {
+            icon: faClockRotateLeft,
+            text: "History Channel",
+        },
+        {
+            icon: faPlay,
+            text: "koko",
+        },
+        {
+            icon: faClock,
+            text: "Sonal eats",
+        },
+        {
+            icon: faThumbsUp,
+            text: "kelly sings",
+        },
+    ];
     return (
         <div className="sidebar">
             <SubMenu menuList={sidebarFeaturedMenu} />
             <hr />
             <SubMenu menuList={sidebarPreferencesMenu} />
             <hr />
-            <SubMenu menuList={sidebarFeaturedMenu} />
+            <SubMenu menuList={sidebarSubscriptionsMenu} />
         </div>
     );
 };

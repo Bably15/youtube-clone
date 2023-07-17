@@ -1,8 +1,10 @@
 .sidebar {
-    max-width: 230px;
+    width: 250px;
     height: 100vh;
     background-color: rgb(0, 0, 0);
     overflow-y: scroll;
+    margin-top: 50px;
+    position: fixed;
 }
 .sidebar__container {
     list-style: none;

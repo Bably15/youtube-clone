@@ -33,7 +33,9 @@
 
     /* flex-direction: column; */
 }
-
+.main__content--body {
+    margin-left: 250px;
+}
 @keyframes App-logo-spin {
     from {
         transform: rotate(0deg);

@@ -38,20 +38,20 @@ const Navbar = () => {
                 </button>
             </div>
             <div className="action--buttons">
-                <a href="">
+                <a href="createVideo">
                     {" "}
                     <FontAwesomeIcon
                         icon={faVideo}
                         style={{ color: "#ffffff" }}
                     />
                 </a>
-                <a href="">
+                <a href="#bell">
                     <FontAwesomeIcon
                         icon={faBell}
                         style={{ color: "#ffffff" }}
                     />
                 </a>
-                <a href="#profile">
+                <a href="/user">
                     {" "}
                     <FontAwesomeIcon
                         icon={faUser}
